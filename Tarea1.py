@@ -24,10 +24,10 @@ def ajedrez(filename):
             movimientos+=1
             f=open(filename,'w')
             f.write('Movimiento'+ f'{movimientos}' + '\n')
-        else:
-            break
 
             for e in tablero:
                 f.write('\t'.join(e)+'\n')
             f.close()
+        else:
+            break
 
